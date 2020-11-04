@@ -37,12 +37,10 @@ class Song
   end
   def self.new_from_filename(name)
     temp = name.split(" - ")
-    puts temp
     self.new(temp[1].delete_suffix(".mp3"),temp[0])
   end
   def self.create_from_filename(name)
     temp = name.split(" - ")
-    puts temp
     self.new(temp[1].delete_suffix(".mp3"),temp[0])
   end
 end
